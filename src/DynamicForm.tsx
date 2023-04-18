@@ -68,6 +68,10 @@ const DynamicForm: React.FC = () => {
     setFormData([...formData, { name: '', gender: '', adult: false }])
   }
 
+  const handleReset = () => {
+    setFormData(initialFormData)
+  }
+
   const handleRemoveRow = (index: number) => {
     const newFormData = [...formData]
     newFormData.splice(index, 1)
@@ -123,6 +127,7 @@ const DynamicForm: React.FC = () => {
       enqueueSnackbar(`Successfully Submitted Form`, {
         variant: 'success',
       })
+      handleReset()
     }
   }
 
