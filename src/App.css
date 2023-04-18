@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: clamp(0.5rem, 2vw, 2rem);
 }
 
 .App-logo {
