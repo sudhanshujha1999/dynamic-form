@@ -5,6 +5,7 @@
   justify-content: center;
   min-height: 100vh;
   padding: clamp(0.5rem, 2vw, 2rem);
+  padding-bottom: 5rem;
 }
 
 .App-logo {
